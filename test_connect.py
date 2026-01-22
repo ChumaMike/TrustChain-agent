@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from langchain_ibm import WatsonxLLM
 
+
 # 1. Load the secrets
 load_dotenv()
 api_key = os.getenv("WATSONX_APIKEY")
