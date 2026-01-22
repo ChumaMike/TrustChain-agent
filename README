@@ -1,28 +1,49 @@
-# 🔗 TrustChain: The Autonomous Ethical Supply Chain Agent
+🔗 TrustChain
+An Autonomous Agent for Ethical Supply Chain Verification
 
-> **Winner of the IBM Dev Day Hackathon 2026 :)**
-> *Powered by IBM Granite 3.0, Docling, and ALTK.*
+Built with IBM Granite 3.0, IBM Docling, and ALTK
 
-## 🚨 The Problem
-Global enterprises spend **$50B/year** manually verifying supplier sustainability claims.
-* Data is locked in messy PDFs and invoices.
-* "Greenwashing" (fake data) is rampant.
-* Human verification is slow and error-prone.
+🌍 The Challenge
 
-## 💡 The Solution
-**TrustChain** is an Agentic System that autonomously validates supplier integrity.
-1.  **Ingests** messy documents using **IBM Docling**.
-2.  **Extracts** granular ESG data using **IBM Granite 3.0**.
-3.  **Validates** facts using **ALTK (Self-Healing Loops)** to prevent hallucinations.
-4.  **Calculates** a real-time "Trust Score" for procurement teams.
+Global enterprises spend over $50B annually verifying supplier sustainability and compliance claims.
 
-## 🛠️ The Tech Stack (The Winning Arsenal)
-* **Brain:** IBM Granite 3.0 Instruct (via watsonx.ai)
-* **Eyes:** IBM Docling (Document Parsing)
-* **Conscience:** ALTK (Agent Lifecycle Toolkit) for Silent Review
-* **Orchestrator:** Custom Python Agent (LangChain/Pydantic)
+Current approaches struggle because:
 
-## 🚀 How to Run
-1.  `pip install -r requirements.txt`
-2.  `python main.py sample_invoice.md`
-3.  Watch the agent ingest, reason, and self-heal!
+Critical data is buried in unstructured documents (PDFs, invoices, reports)
+
+Greenwashing and unverifiable claims are widespread
+
+Manual audits are slow, costly, and prone to human error
+
+💡 The TrustChain Solution
+
+TrustChain is an autonomous, agentic system that continuously validates supplier integrity and ESG claims—at scale.
+
+The agent:
+
+Ingests unstructured supplier documents using IBM Docling
+
+Extracts fine-grained ESG and compliance signals with IBM Granite 3.0
+
+Verifies factual consistency using ALTK self-healing validation loops
+
+Generates a real-time, explainable Trust Score for procurement and compliance teams
+
+This enables faster decisions, reduced risk, and defensible supplier evaluations.
+
+🧠 System Architecture & Tech Stack
+
+LLM Core: IBM Granite 3.0 Instruct (via watsonx.ai)
+
+Document Processing: IBM Docling
+
+Verification Layer: ALTK (Agent Lifecycle Toolkit) for silent review and hallucination mitigation
+
+Agent Orchestration: Custom Python agent using LangChain & Pydantic
+
+🚀 Getting Started
+pip install -r requirements.txt
+python main.py sample_invoice.md
+
+
+Observe the agent as it ingests documents, reasons over extracted data, performs self-correction, and produces a validated trust assessment.
