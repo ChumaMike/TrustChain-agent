@@ -1,0 +1,28 @@
+# 🔗 TrustChain: The Autonomous Ethical Supply Chain Agent
+
+> **Winner of the IBM Dev Day Hackathon 2026 :)**
+> *Powered by IBM Granite 3.0, Docling, and ALTK.*
+
+## 🚨 The Problem
+Global enterprises spend **$50B/year** manually verifying supplier sustainability claims.
+* Data is locked in messy PDFs and invoices.
+* "Greenwashing" (fake data) is rampant.
+* Human verification is slow and error-prone.
+
+## 💡 The Solution
+**TrustChain** is an Agentic System that autonomously validates supplier integrity.
+1.  **Ingests** messy documents using **IBM Docling**.
+2.  **Extracts** granular ESG data using **IBM Granite 3.0**.
+3.  **Validates** facts using **ALTK (Self-Healing Loops)** to prevent hallucinations.
+4.  **Calculates** a real-time "Trust Score" for procurement teams.
+
+## 🛠️ The Tech Stack (The Winning Arsenal)
+* **Brain:** IBM Granite 3.0 Instruct (via watsonx.ai)
+* **Eyes:** IBM Docling (Document Parsing)
+* **Conscience:** ALTK (Agent Lifecycle Toolkit) for Silent Review
+* **Orchestrator:** Custom Python Agent (LangChain/Pydantic)
+
+## 🚀 How to Run
+1.  `pip install -r requirements.txt`
+2.  `python main.py sample_invoice.md`
+3.  Watch the agent ingest, reason, and self-heal!
