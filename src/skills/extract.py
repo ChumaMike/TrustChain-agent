@@ -1,5 +1,31 @@
-# Add this import at the top
+# src/skills/extract.py
+import os
+from dotenv import load_dotenv
+from langchain_ibm import WatsonxLLM
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import PydanticOutputParser
+
+# --- IMPORTS ---
+# We need both the Data Structure (Recipe) and the Validator (Inspector)
+from src.skills.structure import SustainabilityData
 from src.guardrails.validators import silent_review
+
+# Load keys
+load_dotenv()
+
+def get_granite_chef():
+    """Initialize the Granite 3.0 Model."""
+    return WatsonxLLM(
+        model_id="ibm/granite-3-8b-instruct",
+        url="https://us-south.ml.cloud.ibm.com",
+        project_id=os.getenv("WATSONX_PROJECT_ID"),
+        apikey=os.getenv("WATSONX_APIKEY"),
+        params={
+            "decoding_method": "greedy",
+            "max_new_tokens": 500,
+            "min_new_tokens": 1
+        }
+    )
 
 def analyze_document(doc_text: str, max_retries: int = 2) -> SustainabilityData:
     """
