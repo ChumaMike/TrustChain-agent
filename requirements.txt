@@ -1,0 +1,17 @@
+# The Brain (Connects to Granite via Watsonx)
+ibm-watsonx-ai>=1.0.0
+langchain-ibm>=0.3.0
+
+# The Prep Cook (Docling is Real and Powerful)
+docling>=1.0.0
+
+# The Orchestrator (CUGA's public engine)
+langchain>=0.3.0
+langgraph>=0.2.0
+
+# The Recipe Book (Mellea's Structured Generation equivalent)
+pydantic>=2.0.0
+
+# Visuals & Utils
+langflow
+python-dotenv
